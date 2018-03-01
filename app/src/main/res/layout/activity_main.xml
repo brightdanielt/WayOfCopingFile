@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.danielt.wayofcopingfile.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Path : DCIM"
+                android:textAlignment="center" />
+
+            <ListView
+                android:id="@+id/fileList_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+
+                ></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Path : DCIM/Copy"
+                android:textAlignment="center" />
+
+            <ListView
+                android:id="@+id/fileList_pic_copy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_timeOfCoping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time of coping :" />
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note :" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="#90099097"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_FileStreams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:enabled="false"
+            android:text="File\nStreams" />
+
+        <Button
+            android:id="@+id/btn_FileChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:enabled="false"
+            android:text="File\nChannel" />
+
+        <Button
+            android:id="@+id/btn_Java7Files"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:enabled="false"
+            android:text="Java7\nFiles" />
+
+        <Button
+            android:id="@+id/btn_ApacheCommonsIO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:enabled="false"
+            android:text="Apache\nCommonsIO" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#90099097"
+            android:enabled="false"
+            android:text="Delete  file" />
+
+    </LinearLayout>
+
+</LinearLayout>
